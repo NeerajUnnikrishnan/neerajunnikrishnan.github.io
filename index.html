@@ -1,1 +1,142 @@
-Hello World
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<meta charset = "utf-8"/>
+	<title>My Website</title>
+	<link rel="stylesheet" href = "style.css"/>
+	<link rel="stylesheet" href = "menu.css"/>
+	<link rel="stylesheet" href = "form.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		  // Add smooth scrolling to all links
+		  $("a").on('click', function(event) {
+
+		    // Make sure this.hash has a value before overriding default behavior
+		    if (this.hash !== "") {
+		      // Prevent default anchor click behavior
+		      event.preventDefault();
+
+		      // Store hash
+		      var hash = this.hash;
+
+		      // Using jQuery's animate() method to add smooth page scroll
+		      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 800, function(){
+		   
+		        // Add hash (#) to URL when done scrolling (default click behavior)
+		        window.location.hash = hash;
+		      });
+		    } // End if
+		  });
+		});
+	</script>
+</head>
+<body>
+	<div class = "wrapper">
+		<header class="header">
+			<img src="images/logo.jpeg" alt ="Logo image" style="position:relative;top:10px;height:40px;float:left"/> 
+			<a href="" class="logo">CareerGO</a>
+		    <input class="menu-btn" type="checkbox" id="menu-btn" />
+	    	<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+			<ul class="menu">
+			    <li><a href="#page1">Home</a></li>
+			    <li><a href="#page2">About</a></li>
+			    <li><a href="#page3">Why Us?</a></li>
+			    <li><a href="#page4">Contact</a></li>
+		    </ul>
+		</header>	
+		<section class = "page" id = "page1">	
+			<div class="hero_box"> 
+				<h2>Welcome to CareerGO!</h2>
+				<h2>Your Guide to the Future!</h2>
+				<div class="guide_box">
+					<a href="#page2">Learn More <i class="fas fa-angle-double-right"></i></a>
+				</div>
+			</div>
+		</section>
+		<section class = "page" id = "page2">
+			<div class ="page_2_box1">
+				<h2 style="font-size:1em;">Why Us?</h2>
+				<p >CareerGO has an excellent track-record of being the mentor for thousands of graduates and professsional and successsfully helping them in achieving the career they have dreamed of. The team in careerGO has experienced professionals from premier institutes who are experts in their respective fields. </p>
+			</div>
+			<div class ="page_2_box2">
+				<h2 style="font-size:1em;">What We Do??</h2>
+				<p>We are a group of elite individuals who are dedicated to guiding individuals in finding their passion and aptitude to follow a successfull career. </p>
+			</div>
+		</section>
+		<section class = "page" id = "page3">
+		    	<div class = "box">
+		    		<img src="images/5.jpeg" alt ="Tests" class="box_image"/>
+		    		<p>CareerGO provides the career seekers with personalised tests which 
+		    		are tested 100% efficient by research groups from renowned international premier institutes
+		    		</p>
+		    	</div>
+			    <div class = "box">
+			    	<img src="images/6.jpeg" alt ="Trainer" class="box_image"/>
+			    	<p>The team at CareerGO has alumnis from premier institutes like MIT,IIMs,IITs and IISc who 
+			    	   are experts in their field of study and with several years of experience.
+			    </div>		    	
+				<div class = "box">
+					<img src="images/7.jpg"  alt ="Logo image" class="box_image"/>
+					<p>CareerGO assists the aspirants in providing regular feedback and engages them in various interview processes along thier career search.
+				   	</p>
+				</div>
+		</section>
+		<section class = "page" id = "page4">
+			<h2>JOIN US NOW TO GET THE CAREER BOOST YOU ALWAYS DREAMED OF
+			</h2>
+			<div class="container"> 
+				<form action="#">
+				    <div class="row">
+					    <div class="col-25">
+					        <label for="fname">First Name</label>
+					    </div>
+					    <div class="col-75">
+					        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+					    </div>
+				    </div>
+				    <div class="row">
+					    <div class="col-25">
+					        <label for="lname">Last Name</label>
+					    </div>
+					    <div class="col-75">
+					        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+					    </div>
+				    </div>
+				    <div class="row">
+					    <div class="col-25">
+					        <label for="email">E-mail</label>
+					    </div>
+					    <div class="col-75">
+					        <input type="text" id="email" name="lastname" placeholder="Email-address..">
+					    </div>
+				    </div>
+				    <div class="row">
+				      <input  id="button" type="submit" value="Submit">
+				    </div>
+				</form>
+			</div>	
+		</section>
+		<footer class = "footer">
+			<div class="copyright">
+				<p>
+				Copyright © 2018 CareerGO Inc. All rights reserved.
+				</p>
+			</div>
+			<div class="social">
+				<i class="fab fa-facebook-square"></i>
+				<i class="fab fa-twitter"></i>
+				<i class="fab fa-instagram"></i>
+				<i class="fab fa-youtube"></i>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
