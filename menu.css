@@ -1,4 +1,5 @@
 
+/*Stylesheet for navigation bar*/
 a {
   color: #000;
 }
@@ -116,7 +117,7 @@ a {
 
 /* 48em = 768px */
 
-@media (min-width: 600px) {
+@media (min-width: 760px) {
   .header li {
     float: left;
   }
