@@ -41,7 +41,7 @@ input[type=submit]:hover {
 
 .row{
     display:flex;
-    flex-direction: row
+    flex-direction:row;
     margin:10px;
 }
 
