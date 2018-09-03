@@ -90,9 +90,6 @@ html, body {
 /*Third page of website*/
 
 #page3{
-    background-image: url("images/8.jpg");
-	background-size: cover;
-    background-position: center;
 	opacity: 0.9;
 	width: 100%;
 	height: 100vh;
