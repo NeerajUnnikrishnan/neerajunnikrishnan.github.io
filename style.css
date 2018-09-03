@@ -95,7 +95,6 @@ html, body {
     background-position: center;
 	opacity: 0.9;
 	width: 100%;
-    font-size: 1.25em;
 	height: 100vh;
 }
 
@@ -117,7 +116,7 @@ html, body {
     background-size: cover;
     opacity: 0.9;
     width: 100%;
-    font-size: 0.5em;
+    font-size: 1em;
     height: 50vh;
     position: relative;
     top:10%;
